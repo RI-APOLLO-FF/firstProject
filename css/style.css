@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC&family=Roboto:wght@400;700&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -71,6 +72,783 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
 }
 
+html {
+  font-size: 0.6944444444vw;
+}
+@media (max-width: 768px) {
+  html {
+    font-size: 1.7291666667vh;
+  }
+}
 
+.wrapper {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  overflow: hidden;
+  min-height: 100%;
+  background: white;
+}
 
+.header__chekout {
+  background: #000;
+  padding: 0.7rem;
+  color: white;
+  text-align: center;
+  font-size: 1.2rem;
+  letter-spacing: 0.2rem;
+  line-height: 1.5rem;
+  font-weight: 400;
+  width: 100%;
+  height: 3rem;
+}
+.header__nav {
+  width: 100%;
+  height: 6.6rem;
+  margin-right: 2rem;
+}
+.container {
+  max-width: 144rem;
+  margin: 0 auto;
+}
 
+.navigation {
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+}
+.navigation_item {
+  width: 16rem;
+  height: 3.6rem;
+  position: relative;
+  overflow: hidden;
+  transition-duration: 0.5s;
+}
+.navigation_item:hover {
+  background: rgba(211, 211, 211, 0.556);
+  border: 0.2rem solid rgba(128, 128, 128, 0.39);
+  box-shadow: 0.1rem 0.1rem 1rem rgba(0, 0, 0, 0.777);
+}
+.navigation__menu {
+  width: 74rem;
+  height: inherit;
+}
+.navigation__cabinet {
+  width: 10rem;
+  margin-right: 2rem;
+}
+
+.grid {
+  display: grid;
+}
+
+.logo-small {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+
+.menu {
+  align-content: center;
+  justify-self: center;
+}
+.menu__list {
+  grid-template-columns: repeat(5, auto);
+  gap: 2.2rem;
+}
+
+.link__btn {
+  padding: 2rem 0rem;
+  font-size: 1.4rem;
+  line-height: 2.1rem;
+  letter-spacing: 0.1rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+  color: black;
+  transition-duration: 0.5s;
+}
+.link__btn:hover {
+  background: rgba(211, 211, 211, 0.303);
+  box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.283);
+}
+
+.cabinet {
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 1rem;
+  margin-right: 5rem;
+}
+.signin-my {
+  padding: 1rem;
+  border-radius: 50%;
+  transition-duration: 0.5s;
+}
+
+.signin-my:hover {
+  background: rgba(211, 211, 211, 0.556);
+  border: 0.2rem solid rgba(128, 128, 128, 0.539);
+  box-shadow: 0.1rem 0.1rem 1rem rgba(0, 0, 0, 0.808);
+}
+
+.basked-my {
+  padding: 1rem;
+  border-radius: 50%;
+  transition-duration: 0.5s;
+}
+
+.basked-my:hover {
+  background: rgba(211, 211, 211, 0.556);
+  border: 0.2rem solid rgba(128, 128, 128, 0.569);
+  box-shadow: 0.1rem 0.1rem 1rem rgba(0, 0, 0, 0.799);
+}
+
+.banner {
+  position: relative;
+  overflow: hidden;
+}
+.banner__img {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+.banner__title {
+  position: absolute;
+  z-index: 2;
+}
+
+.title {
+  width: 63rem;
+  height: 1.6rem;
+  justify-self: center;
+  margin-top: 4.5rem;
+  grid-template-rows: repeat(3, 1fr);
+}
+.title__main {
+  font-size: 4.4rem;
+  text-align: center;
+  line-height: 5rem;
+  font-weight: 400;
+  margin-bottom: 1.4rem;
+}
+.title__btn {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.text {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  text-align: center;
+  letter-spacing: 0.1rem;
+}
+
+.button {
+  min-width: 45rem;
+  height: 8rem;
+  justify-self: center;
+  gap: 1.2rem;
+}
+.button__revs {
+  place-self: center;
+}
+.button__boards {
+  place-self: center;
+}
+
+.orange-btn {
+  background: #FF4A32;
+  height: 3.3rem;
+  border-radius: 3.5rem;
+  color: white;
+  font-size: 1.4rem;
+  line-height: 2.2rem;
+  text-align: center;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding: 1rem 3.7rem;
+  transition-duration: 0.5s;
+}
+
+.orange-btn:hover {
+  box-shadow: 0.5rem 0.3rem 2rem #FF4A32;
+  border: 0.1rem solid white;
+}
+
+.advertising {
+  background: #000;
+  width: 100%;
+  height: 8rem;
+}
+.advertising__brands {
+  height: inherit;
+  width: 120rem;
+  margin: 0 auto;
+}
+
+.brands {
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: space-evenly;
+  justify-items: center;
+}
+.brands__logo {
+  position: relative;
+  overflow: hidden;
+  width: 15rem;
+  height: 4rem;
+  align-self: center;
+}
+
+.brandimg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  object-fit: contain;
+}
+
+.loking__discription {
+  grid-template-rows: repeat(2, 1fr);
+  justify-items: center;
+  width: 70rem;
+  height: 18rem;
+  margin: 3rem auto;
+  padding: 0 1rem;
+}
+.loking__title {
+  align-self: center;
+  width: 65rem;
+  height: 3.6rem;
+  font-size: 3.2rem;
+  line-height: 3.6rem;
+  text-align: center;
+  color: #000;
+}
+.loking__text {
+  display: block;
+  width: 65rem;
+  height: 5.8rem;
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 1.9rem;
+  padding: 0 1.5rem;
+}
+.loking__box {
+  width: 120rem;
+  height: 58rem;
+  margin: 0 auto;
+}
+
+.box {
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  margin-bottom: 2rem;
+}
+.box__item {
+  width: 58rem;
+  height: 58rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.shop-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  object-position: center;
+  transition-duration: 1s;
+}
+
+.stock {
+  position: absolute;
+  z-index: 3;
+  color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.stock__titleh4 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.5rem;
+  line-height: 3rem;
+  text-align: center;
+}
+.stock__instock {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 2.3rem;
+  text-align: center;
+}
+
+.item1:hover {
+  background: #000;
+}
+.item1:hover .shop-img {
+  opacity: 0.7;
+  transform: scale(1.1, 1.1);
+}
+
+.item2:hover {
+  background: #000;
+}
+.item2:hover .shop-img {
+  opacity: 0.7;
+  transform: scale(1.1, 1.1);
+}
+
+.performance__pic {
+  width: 144rem;
+  height: 73rem;
+}
+
+.pic {
+  position: relative;
+  overflow: hidden;
+}
+.pic__img {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+
+.box-title {
+  position: absolute;
+  z-index: 3;
+  width: 56rem;
+  height: 20rem;
+  justify-self: center;
+  margin-top: 4.4rem;
+  grid-template-rows: repeat(4, 1fr);
+}
+.box-title__text {
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.9rem;
+  text-align: center;
+  letter-spacing: 0.1rem;
+  place-self: center;
+}
+.box-title__titleh2 {
+  font-weight: 700;
+  font-size: 4.5rem;
+  line-height: 5.1rem;
+  text-align: center;
+  place-self: center;
+}
+.box-title__text2 {
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.9rem;
+  text-align: center;
+  letter-spacing: 0.1rem;
+  place-self: center;
+}
+.box-title__btn {
+  margin: 0 auto;
+  place-self: center;
+}
+
+.shop__reviev {
+  width: 144rem;
+  height: 47rem;
+  place-items: center;
+}
+.shop__reviev-box {
+  width: 120rem;
+  height: 38rem;
+}
+
+.reviev {
+  grid-template-columns: repeat(3, 1fr);
+  padding: 0rem 1rem;
+}
+.reviev__element1 {
+  width: 38rem;
+  height: 38rem;
+  position: relative;
+  overflow: hidden;
+}
+.reviev__element2 {
+  width: 38rem;
+  height: 38rem;
+  position: relative;
+  overflow: hidden;
+}
+.reviev__element3 {
+  width: 38rem;
+  height: 38rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.scooter1 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+
+.scooter2 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+
+.offer__title {
+  font-weight: 400;
+  font-size: 3.2rem;
+  line-height: 3.8rem;
+  text-align: left;
+  align-self: end;
+  margin-bottom: 1rem;
+}
+.offer__text {
+  font-weight: 400;
+  line-height: 2.2rem;
+  font-size: 1.5rem;
+  text-align: left;
+  align-self: center;
+}
+.offer__btn {
+  align-self: start;
+  margin-top: 1rem;
+}
+
+.shop-box {
+  width: 144rem;
+  height: 48rem;
+  grid-template: 48rem/repeat(3, 48rem);
+}
+
+.item3 {
+  width: 48rem;
+  height: 48rem;
+}
+
+.item3:hover {
+  background: #000;
+}
+.item3:hover .shop-img {
+  opacity: 0.7;
+  transform: scale(1.1, 1.1);
+}
+
+.item4 {
+  width: 48rem;
+  height: 48rem;
+}
+
+.item4:hover {
+  background: #000;
+}
+.item4:hover .shop-img {
+  opacity: 0.7;
+  transform: scale(1.1, 1.1);
+}
+
+.item5 {
+  width: 48rem;
+  height: 48rem;
+}
+
+.item5:hover {
+  background: #000;
+}
+.item5:hover .shop-img {
+  opacity: 0.7;
+  transform: scale(1.1, 1.1);
+}
+
+.video {
+  width: 144rem;
+  height: 43rem;
+}
+.video__box {
+  width: 116rem;
+  height: 32rem;
+  margin: 5.5rem auto;
+  grid-template-columns: repeat(2, 1fr);
+  place-items: center;
+}
+.video__play1 {
+  width: 54rem;
+  height: 30rem;
+  position: relative;
+  overflow: hidden;
+}
+.video__play2 {
+  width: 54rem;
+  height: 30rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.clip1 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+
+.clip2 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+
+.accessories {
+  width: 144rem;
+  height: 40.5rem;
+  margin-bottom: 10rem;
+}
+.accessories__select {
+  width: inherit;
+  height: inherit;
+  grid-template-rows: repeat(2, 1fr);
+}
+.accessories__title {
+  width: 142rem;
+  height: 6rem;
+  font-weight: 700;
+  line-height: 3.6rem;
+  font-size: 3.2rem;
+  text-align: center;
+  place-self: center;
+}
+.accessories__slider {
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.slider__box {
+  width: 18rem;
+  height: 23rem;
+  place-self: center;
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.box__img {
+  width: 17rem;
+  height: 17rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.accessor {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  object-fit: contain;
+}
+
+.produkt {
+  text-align: center;
+  font-weight: 400;
+  line-height: 1.8rem;
+  font-size: 1.5rem;
+  color: #FF4A32;
+}
+
+.price {
+  text-align: center;
+  font-weight: 400;
+  line-height: 1.8rem;
+  font-size: 1.4rem;
+}
+
+.clear-box {
+  width: 144rem;
+  height: 6.6rem;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 2px 0px 10px rgba(41, 44, 61, 0.34);
+  margin-bottom: 3rem;
+}
+
+.discription {
+  background: #000;
+  width: 144rem;
+  height: 30.8rem;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.grid {
+  display: grid;
+}
+
+.discription-fast {
+  width: 33rem;
+  height: 25rem;
+}
+
+.discription-img {
+  display: inline-block;
+  width: 8.7rem;
+  height: 8.7rem;
+  place-self: center;
+}
+
+.discription-title {
+  font-weight: 700;
+  line-height: 3.6rem;
+  font-size: 3.2rem;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.discription-text {
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 2, 2rem;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.discription-far {
+  width: 33rem;
+  height: 25rem;
+}
+
+.discription-safe {
+  width: 33rem;
+  height: 25rem;
+}
+
+.discription-last {
+  width: 33rem;
+  height: 25rem;
+}
+
+.footer {
+  margin-top: auto;
+}
+.footer__subnavigation {
+  width: 144rem;
+  height: 33rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+.footer__explore {
+  padding: 0 1rem;
+  grid-template-rows: auto;
+}
+.footer__about {
+  padding: 0 3rem 0 1rem;
+  height: inherit;
+  text-align: left;
+  align-self: center;
+}
+.footer__information {
+  width: 120rem;
+  height: 7rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.subnavigation {
+  width: 144rem;
+  height: 33rem;
+}
+.subnavigation__logo {
+  place-items: center;
+}
+
+.logo__wrap {
+  width: 16rem;
+  height: 13.5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.logo-big {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+
+.explore-title {
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 3rem;
+  align-self: center;
+}
+
+.explore-list {
+  font-weight: 400;
+  font-size: 1.3rem;
+  line-height: 2.1rem;
+  color: #000000;
+}
+
+.exp-link {
+  color: #000000;
+}
+
+.about-title {
+  font-weight: 400;
+  font-size: 1.9rem;
+  line-height: 3rem;
+  color: #000000;
+  align-self: center;
+}
+
+.about-text {
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 2.1rem;
+  color: #000000;
+}
+
+.adress {
+  display: block;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 2.1rem;
+  color: #000000;
+}
+
+.copyright {
+  place-items: center;
+  height: inherit;
+  font-weight: 400;
+  line-height: 1.9rem;
+  font-size: 1.2rem;
+  grid-column: 1/2;
+}
+
+.red {
+  color: #FF4A32;
+}
+
+.payment {
+  grid-column: 3/4;
+  height: inherit;
+}
+.payment__card {
+  grid-template-columns: repeat(8, 1fr);
+  height: inherit;
+  place-items: center;
+  gap: 1rem;
+}
