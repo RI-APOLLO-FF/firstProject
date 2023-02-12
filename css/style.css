@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Amatic+SC&family=Roboto:wght@400;700&display=swap");
+
 * {
   padding: 0;
   margin: 0;
@@ -75,9 +76,9 @@ h1, h2, h3, h4, h5, h6 {
 html {
   font-size: 0.6944444444vw;
 }
-@media (max-width: 768px) {
+@media (max-width: 360px) {
   html {
-    font-size: 1.7291666667vh;
+    font-size: 2.34375vh;
   }
 }
 
@@ -133,6 +134,7 @@ html {
 }
 .navigation__cabinet {
   width: 10rem;
+  height: 2rem;
   margin-right: 2rem;
 }
 
@@ -180,28 +182,47 @@ html {
   gap: 1rem;
   margin-right: 5rem;
 }
+.cabinet__signin {
+  width: 2rem;
+  height: 2rem;
+  position: relative;
+  overflow: hidden;
+}
+.cabinet__basked {
+  width: 2.2rem;
+  height: 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.ico-signin {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+
+.ico-bag {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+
 .signin-my {
   padding: 1rem;
   border-radius: 50%;
   transition-duration: 0.5s;
 }
 
-.signin-my:hover {
-  background: rgba(211, 211, 211, 0.556);
-  border: 0.2rem solid rgba(128, 128, 128, 0.539);
-  box-shadow: 0.1rem 0.1rem 1rem rgba(0, 0, 0, 0.808);
-}
-
 .basked-my {
   padding: 1rem;
   border-radius: 50%;
   transition-duration: 0.5s;
-}
-
-.basked-my:hover {
-  background: rgba(211, 211, 211, 0.556);
-  border: 0.2rem solid rgba(128, 128, 128, 0.569);
-  box-shadow: 0.1rem 0.1rem 1rem rgba(0, 0, 0, 0.799);
 }
 
 .banner {
@@ -851,4 +872,19 @@ html {
   height: inherit;
   place-items: center;
   gap: 1rem;
+}
+
+.card__item {
+  position: relative;
+  overflow: hidden;
+  width: 3.8rem;
+  height: 2.4rem;
+}
+.card__item-ico {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  object-fit: cover;
 }
